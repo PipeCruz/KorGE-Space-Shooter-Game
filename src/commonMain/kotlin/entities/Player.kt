@@ -33,6 +33,7 @@ class Player(bm : Bitmap, private var views : Views) : Sprite(bm) {
         center()
         addUpdater {
             val deltaTime = it.milliseconds / 1000
+//            println("user delta time : $deltaTime")
 
             input.x = (playerInput.pressingRight().toInt() - playerInput.pressingLeft().toInt()).toFloat()
             input.y = (playerInput.pressingDown().toInt() - playerInput.pressingUp().toInt()).toFloat()
@@ -40,7 +41,6 @@ class Player(bm : Bitmap, private var views : Views) : Sprite(bm) {
 
             velocity.x += input.x * moveSpeed
             velocity.y += input.y * moveSpeed
-
             velocity.x *= deceleration
             velocity.y *= deceleration
 

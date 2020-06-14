@@ -14,18 +14,20 @@ import gameStateManager.GameDependency
 class GameScene(private val myDependency: GameDependency) : Scene() {
     override suspend fun Container.sceneInit() {
         text("Test Game: ${myDependency.value}")
-        solidRect(100.0, 100.0, Colors.BLUE).position(100, 100).onClick {
+        solidRect(100.0, 100.0, Colors.BLUE).position(containerRoot.width/2,containerRoot.height/2).center().onClick {
             launchImmediately {
                 sceneDestroy()
+                removeAllComponents()
                 sceneContainer.changeTo<MainMenuScene>(GameDependency("MainMenu"))
             }
         }
         val player = Player(resourcesVfs["korge.png"].readBitmap(), views)
-        player.xy(100.0,100.0)
+        player.xy(500.0,500.0)
+        //we need to center the camera on the player
         addChild(player)
         //testing enemy
         val explosionAnimation = SpriteAnimation(
-                spriteMap = resourcesVfs["explosion.png"].readBitmap(),
+                spriteMap = resourcesVfs["homing_enemy.png"].readBitmap(),
                 spriteWidth = 48,
                 spriteHeight = 48,
                 columns = 9,
