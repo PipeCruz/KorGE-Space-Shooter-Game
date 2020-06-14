@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" isTestModule="false" externalProjectId="KotlinGameJam">
+        <dependsOnModuleNames>KotlinGameJam:commonMain</dependsOnModuleNames>
+        <sourceSets>
+          <sourceSet>KotlinGameJam.commonMain</sourceSet>
+        </sourceSets>
+        <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../build/classes/kotlin/jvm/main" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korge/korge-box2d-jvm/1.13.2/607dbcd6aeefb5ed7f62b476ab410ec4e28980c/korge-box2d-jvm-1.13.2.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korge/korge-jvm/1.13.2/bef441bbbf2b56629509c61b28886ebc03103651/korge-jvm-1.13.2.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korgw/korgw-jvm/1.12.18/69b60cffc02fc381357b55ec231dd2563510f939/korgw-jvm-1.12.18.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korim/korim-jvm/1.12.24/92f1cad5b2043a1b65966efb1730ea4bef972a41/korim-jvm-1.12.24.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korau/korau-jvm/1.11.9/93d47b3e8018a434ab93df31bc3ccc2d1bd8a269/korau-jvm-1.11.9.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korio/korio-jvm/1.11.7/1ded8fa527428165e5604e774c90a7ca04c7053d/korio-jvm-1.11.7.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korma/korma-jvm/1.11.16/a592d1aa851d106c7b1d3044d5826aaee618b4ed/korma-jvm-1.11.16.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.3.72/916d54b9eb6442b615e6f1488978f551c0674720/kotlin-stdlib-jdk8-1.3.72.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.72/3adfc2f4ea4243e01204be8081fe63bde6b12815/kotlin-stdlib-jdk7-1.3.72.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.3.7/8e2eb78158638b33793d204ffef0b65c4a578e1c/kotlinx-coroutines-core-1.3.7.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.72/8032138f12c0180bc4e51fe139d4c52b46db6109/kotlin-stdlib-1.3.72.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-common/1.3.7/76e1a75e804618c9e9e571b797eb9937a97cd1e/kotlinx-coroutines-core-common-1.3.7.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.72/6ca8bee3d88957eaaaef077c41c908c9940492d8/kotlin-stdlib-common-1.3.72.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.klock/klock-jvm/1.11.12/7428329055fdf31745db069dd1891c3971565162/klock-jvm-1.11.12.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.kmem/kmem-jvm/1.10.5/58161533ad2abe2d9d228a6f25f26290008e6c13/kmem-jvm-1.10.5.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.kds/kds-jvm/1.10.12/a509028b83e71f7b511d07c481c0a19b28539522/kds-jvm-1.10.12.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.5.0/af38e7c4d0fc73c23ecd785443705bfdee5b90bf/jna-platform-5.5.0.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.5.0/e0845217c4907822403912ad6828d8e0b256208/jna-5.5.0.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.krypto/krypto-jvm/1.11.1/3783b4b599d751cb836a09555bcc7de1af1d66cb/krypto-jvm-1.11.1.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korinject/korinject-jvm/1.10.1/77e4c6398b39af8eb39cb4ffcc5d30335a4f6c21/korinject-jvm-1.10.1.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.klogger/klogger-jvm/1.10.1/bb8487d658201f3c28f2e124a654d7f65c4e7f02/klogger-jvm-1.10.1.jar;C:/Users/pipec/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.kbox2d/kbox2d-jvm/0.6.1/e6f9baa5ce8eb57967bfc17691b5bbf28bbd5cd0/kbox2d-jvm-0.6.1.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="KotlinGameJam" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.72/657d8d34d91e1964b4439378c09933e840bfe8d5/kotlin-script-runtime-1.3.72.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.3.72/e09990437040879d692655d66f58a64318681ffe/kotlin-scripting-common-1.3.72.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.3.72/7dde2c909e6f1b80245c7ca100d32a8646b5666d/kotlin-scripting-jvm-1.3.72.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.72/6ca8bee3d88957eaaaef077c41c908c9940492d8/kotlin-stdlib-common-1.3.72.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.72/8032138f12c0180bc4e51fe139d4c52b46db6109/kotlin-stdlib-1.3.72.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.2.1/3839faf625f4197acaeceeb6da000f011a2acb49/kotlinx-coroutines-core-1.2.1.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+            </array>
+          </option>
+          <option name="multiPlatform" value="true" />
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+</module>
