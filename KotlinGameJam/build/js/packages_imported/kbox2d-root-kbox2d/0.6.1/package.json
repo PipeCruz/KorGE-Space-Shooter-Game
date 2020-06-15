@@ -1,0 +1,10 @@
+{
+  "main": "kbox2d-root-kbox2d.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "kbox2d-root-kbox2d",
+  "version": "0.6.1"
+}

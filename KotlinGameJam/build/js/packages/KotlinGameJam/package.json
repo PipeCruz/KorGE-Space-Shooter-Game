@@ -1,0 +1,32 @@
+{
+  "main": "kotlin/KotlinGameJam.js",
+  "devDependencies": {
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.9.0"
+  },
+  "dependencies": {
+    "korge-root-korge": "1.13.2",
+    "korgw-root-korgw": "1.12.18",
+    "korim-root-korim": "1.12.24",
+    "korio-root-korio": "1.11.7",
+    "klock-root-klock": "1.11.12",
+    "kotlin": "1.3.72",
+    "kmem-root-kmem": "1.10.5",
+    "kds-root-kds": "1.10.12",
+    "kotlinx-coroutines-core": "1.3.7",
+    "korma-root-korma": "1.11.16",
+    "korau-root-korau": "1.11.9",
+    "krypto-root-krypto": "1.11.1",
+    "korinject-root-korinject": "1.10.1",
+    "klogger-root-klogger": "1.10.1",
+    "korge-root-korge-box2d": "1.13.2",
+    "kbox2d-root-kbox2d": "0.6.1",
+    "kotlin-source-map-loader": "1.3.72"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "KotlinGameJam",
+  "version": "4.10.1"
+}

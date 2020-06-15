@@ -1,0 +1,10 @@
+{
+  "main": "korinject-root-korinject.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "korinject-root-korinject",
+  "version": "1.10.1"
+}

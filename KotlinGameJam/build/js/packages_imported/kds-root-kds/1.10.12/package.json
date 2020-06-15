@@ -1,0 +1,10 @@
+{
+  "main": "kds-root-kds.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "kds-root-kds",
+  "version": "1.10.12"
+}

@@ -11,11 +11,12 @@ open class InputManager(var views : Views) {
     fun pressingKey(key: Key) = views.input.keys[key]
 }
 
-data class PlayerInput(val playerView: Views, var upKey : Key = Key.W, var downKey : Key = Key.S, var leftKey : Key = Key.A, var rightKey : Key = Key.D, var attackKey : Key = Key.SPACE) : InputManager(views = playerView) {
+data class PlayerInput(val playerView: Views, var upKey : Key = Key.W, var downKey : Key = Key.S, var leftKey : Key = Key.A, var rightKey : Key = Key.D, var attackKey : Key = Key.SPACE, var boostKey : Key = Key.V) : InputManager(views = playerView) {
     fun pressingUp():     Boolean = pressingKey(upKey)
     fun pressingDown():   Boolean = pressingKey(downKey)
     fun pressingLeft():   Boolean = pressingKey(leftKey)
     fun pressingRight():  Boolean = pressingKey(rightKey)
     fun pressingAttack(): Boolean = pressingKey(attackKey)
+    fun pressingBoost(): Boolean = pressingKey(boostKey)
 
 }

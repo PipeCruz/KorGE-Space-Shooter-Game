@@ -1,0 +1,10 @@
+{
+  "main": "klogger-root-klogger.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "klogger-root-klogger",
+  "version": "1.10.1"
+}

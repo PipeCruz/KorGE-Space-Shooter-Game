@@ -1,0 +1,10 @@
+{
+  "main": "kmem-root-kmem.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "kmem-root-kmem",
+  "version": "1.10.5"
+}

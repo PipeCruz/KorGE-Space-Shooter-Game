@@ -1,0 +1,10 @@
+{
+  "main": "krypto-root-krypto.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "krypto-root-krypto",
+  "version": "1.11.1"
+}

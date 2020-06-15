@@ -1,0 +1,10 @@
+{
+  "main": "klock-root-klock.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "klock-root-klock",
+  "version": "1.11.12"
+}

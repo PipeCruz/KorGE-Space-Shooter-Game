@@ -1,0 +1,10 @@
+{
+  "main": "korau-root-korau.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "korau-root-korau",
+  "version": "1.11.9"
+}

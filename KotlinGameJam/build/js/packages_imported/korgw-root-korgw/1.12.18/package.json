@@ -1,0 +1,10 @@
+{
+  "main": "korgw-root-korgw.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "korgw-root-korgw",
+  "version": "1.12.18"
+}

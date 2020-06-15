@@ -1,0 +1,10 @@
+{
+  "main": "korge-root-korge-box2d.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "korge-root-korge-box2d",
+  "version": "1.13.2"
+}

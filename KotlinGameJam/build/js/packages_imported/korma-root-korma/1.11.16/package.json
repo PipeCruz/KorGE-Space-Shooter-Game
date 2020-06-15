@@ -1,0 +1,10 @@
+{
+  "main": "korma-root-korma.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "korma-root-korma",
+  "version": "1.11.16"
+}

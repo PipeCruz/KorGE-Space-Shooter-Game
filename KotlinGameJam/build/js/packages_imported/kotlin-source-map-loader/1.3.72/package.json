@@ -1,0 +1,10 @@
+{
+  "main": "kotlin-source-map-loader.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "kotlin-source-map-loader",
+  "version": "1.3.72"
+}

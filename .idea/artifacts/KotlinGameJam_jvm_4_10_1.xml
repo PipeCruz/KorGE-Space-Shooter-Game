@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="KotlinGameJam-jvm-4.10.1">
-    <output-path>C:\Users\pipec\floobits\share\benozzy\KotlinGameJam\build\libs</output-path>
+    <output-path>C:\Users\UnknownUser\floobits\share\benozzy\KotlinGameJam\build\libs</output-path>
     <root id="archive" name="KotlinGameJam-jvm-4.10.1.jar">
       <element id="module-output" name="KotlinGameJam.jvmMain" />
     </root>

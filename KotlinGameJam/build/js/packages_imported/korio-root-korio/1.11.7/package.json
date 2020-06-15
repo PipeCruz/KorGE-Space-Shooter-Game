@@ -1,0 +1,10 @@
+{
+  "main": "korio-root-korio.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "korio-root-korio",
+  "version": "1.11.7"
+}

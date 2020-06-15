@@ -1,0 +1,10 @@
+{
+  "main": "korge-root-korge.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "korge-root-korge",
+  "version": "1.13.2"
+}

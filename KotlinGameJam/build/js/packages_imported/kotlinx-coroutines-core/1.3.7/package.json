@@ -1,0 +1,10 @@
+{
+  "main": "kotlinx-coroutines-core.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "kotlinx-coroutines-core",
+  "version": "1.3.7"
+}

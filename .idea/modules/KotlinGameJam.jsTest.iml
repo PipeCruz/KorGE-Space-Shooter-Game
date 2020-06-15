@@ -5,8 +5,8 @@
       <configuration version="3" platform="JavaScript " allPlatforms="JS []" useProjectSettings="false" isTestModule="true" externalProjectId="KotlinGameJam">
         <dependsOnModuleNames>KotlinGameJam:commonTest</dependsOnModuleNames>
         <sourceSets>
-          <sourceSet>KotlinGameJam.jsMain</sourceSet>
           <sourceSet>KotlinGameJam.commonTest</sourceSet>
+          <sourceSet>KotlinGameJam.jsMain</sourceSet>
           <sourceSet>KotlinGameJam.commonMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>

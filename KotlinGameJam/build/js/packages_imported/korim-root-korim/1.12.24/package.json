@@ -1,0 +1,10 @@
+{
+  "main": "korim-root-korim.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": [],
+  "name": "korim-root-korim",
+  "version": "1.12.24"
+}
