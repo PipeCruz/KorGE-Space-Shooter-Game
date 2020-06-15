@@ -1,2 +1,2 @@
-# KotlinGameJam
- A storage for the kotling game gam happening rn
+# KorGE Game Jam Submission
+ runnable jar on https://pipecruz.itch.io/space-battlestars-r
