@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.krypto:krypto-linuxx64:klib:1.11.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.krypto/krypto-linuxx64/1.11.1/86395566da588027d4ceb6666653b994e33da148/krypto.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.krypto/krypto-linuxx64/1.11.1/aea10dd739cc80d6e603a54f8b832b6d83e47435/krypto-linuxx64-1.11.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

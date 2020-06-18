@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="14" />
+    <bytecodeTargetLevel target="14">
+      <module name="benozzy.KotlinGameJam" target="11" />
+      <module name="benozzy.KotlinGameJam.jvmMain" target="1.6" />
+      <module name="benozzy.KotlinGameJam.jvmTest" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>

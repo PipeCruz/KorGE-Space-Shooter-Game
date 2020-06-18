@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.korinject:korinject-metadata:1.10.1" type="kotlin.common">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korinject/korinject-metadata/1.10.1/4bdf54792b08be2ee4d9830338c8d911e5e5e536/korinject-metadata-1.10.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korinject/korinject-metadata/1.10.1/cb42dc16bc0a24f857d2edc30d92cea29c9c38dc/korinject-metadata-1.10.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

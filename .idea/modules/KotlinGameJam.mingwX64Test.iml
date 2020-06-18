@@ -5,9 +5,9 @@
       <configuration version="3" platform="Native " allPlatforms="Native []" useProjectSettings="false" isTestModule="true" externalProjectId="KotlinGameJam">
         <dependsOnModuleNames>KotlinGameJam:commonTest</dependsOnModuleNames>
         <sourceSets>
-          <sourceSet>KotlinGameJam.commonTest</sourceSet>
           <sourceSet>KotlinGameJam.mingwX64Main</sourceSet>
           <sourceSet>KotlinGameJam.commonMain</sourceSet>
+          <sourceSet>KotlinGameJam.commonTest</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <externalSystemTestTasks>mingwX64Test|KotlinGameJam:mingwX64Test|mingwX64</externalSystemTestTasks>

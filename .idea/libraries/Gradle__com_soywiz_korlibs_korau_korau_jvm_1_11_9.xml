@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.korau:korau-jvm:1.11.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korau/korau-jvm/1.11.9/93d47b3e8018a434ab93df31bc3ccc2d1bd8a269/korau-jvm-1.11.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korau/korau-jvm/1.11.9/a296f4046db9b1ddb64b6f137585c802d5313ed6/korau-jvm-1.11.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

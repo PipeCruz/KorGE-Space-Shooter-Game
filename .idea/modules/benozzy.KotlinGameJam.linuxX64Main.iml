@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="KotlinGameJam:linuxX64Main" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="" external.system.module.type="sourceSet" external.system.module.version="4.10.1" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="Native " allPlatforms="Native []" useProjectSettings="false" isTestModule="false" externalProjectId="KotlinGameJam">
+        <dependsOnModuleNames>KotlinGameJam:commonMain</dependsOnModuleNames>
+        <sourceSets>
+          <sourceSet>benozzy.KotlinGameJam.commonMain</sourceSet>
+        </sourceSets>
+        <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
+        <compilerSettings />
+        <compilerArguments>
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="multiPlatform" value="true" />
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../build/classes/kotlin/linuxX64/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../build/platforms/native-desktop" />
+    <content url="file://$MODULE_DIR$/../../src/linuxX64Main" />
+    <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.3.72 - stdlib" level="project" />
+    <orderEntry type="module" module-name="benozzy.KotlinGameJam.commonMain" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.3.72 - builtin [linux_x64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.3.72 - iconv [linux_x64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.3.72 - linux [linux_x64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.3.72 - posix [linux_x64]" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.3.72 - zlib [linux_x64]" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.72" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.korge:korge-box2d-linuxx64:klib:1.13.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.korge:korge-linuxx64:klib:1.13.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.korgw:korgw-linuxx64:klib:1.12.18" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.korgw:korgw-linuxx64:klib:cinterop-GL:1.12.18" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.korim:korim-linuxx64:klib:1.12.24" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.korim:korim-linuxx64:klib:cinterop-stb_image:1.12.24" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.korau:korau-linuxx64:klib:1.11.9" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.korau:korau-linuxx64:klib:cinterop-linux_OpenAL:1.11.9" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.korau:korau-linuxx64:klib:cinterop-minimp3:1.11.9" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.korau:korau-linuxx64:klib:cinterop-stb_vorbis:1.11.9" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.korio:korio-linuxx64:klib:1.11.7" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.klock:klock-linuxx64:klib:1.11.12" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.kmem:kmem-linuxx64:klib:1.10.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.korma:korma-linuxx64:klib:1.11.16" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.kds:kds-linuxx64:klib:1.10.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-linuxx64:klib:1.3.7" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-common:1.3.7" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.kbox2d:kbox2d-linuxx64:klib:0.6.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.krypto:krypto-linuxx64:klib:1.11.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.korinject:korinject-linuxx64:klib:1.10.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.soywiz.korlibs.klogger:klogger-linuxx64:klib:1.10.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.71" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:atomicfu-linuxx64:klib:0.14.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:atomicfu-linuxx64:klib:cinterop-interop:0.14.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+  </component>
+</module>

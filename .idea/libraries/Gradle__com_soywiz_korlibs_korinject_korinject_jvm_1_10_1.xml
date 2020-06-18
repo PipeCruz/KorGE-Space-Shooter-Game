@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.korinject:korinject-jvm:1.10.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korinject/korinject-jvm/1.10.1/77e4c6398b39af8eb39cb4ffcc5d30335a4f6c21/korinject-jvm-1.10.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korinject/korinject-jvm/1.10.1/bc5db6963051fbb1f7ee807ce3adea947ffd96b0/korinject-jvm-1.10.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

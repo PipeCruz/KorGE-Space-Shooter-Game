@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.korim:korim-linuxx64:klib:cinterop-stb_image:1.12.24">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korim/korim-linuxx64/1.12.24/87f88d8a06e87347733571cdd277e6ee0f5db765/korim-cinterop-stb_image.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korim/korim-linuxx64/1.12.24/39c22b7b3d6566feb21d2203a34bc93742ce3fca/korim-linuxx64-1.12.24-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

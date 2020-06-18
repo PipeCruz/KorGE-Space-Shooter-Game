@@ -3,9 +3,11 @@ package entities
 import com.soywiz.kds.atomic.kdsFreeze
 import com.soywiz.klock.TimeSpan
 import com.soywiz.klock.milliseconds
+import com.soywiz.klock.seconds
 import com.soywiz.kmem.toInt
 import com.soywiz.korau.sound.NativeSound
 import com.soywiz.korau.sound.readSound
+import com.soywiz.korge.scene.SceneContainer
 import com.soywiz.korge.time.delay
 import com.soywiz.korge.view.*
 import com.soywiz.korim.bitmap.Bitmap
@@ -15,6 +17,7 @@ import com.soywiz.korio.file.std.resourcesVfs
 import com.soywiz.korma.geom.*
 import entities.enemies.Enemy
 import entities.projectiles.PlayerBullet
+import gameStateManager.GameDependency
 import gameStateManager.scenes.GameScene
 import input.PlayerInput
 import kotlinx.coroutines.GlobalScope
@@ -81,6 +84,11 @@ class Player(bm: Bitmap, private var views: Views, private var reloadTime: TimeS
 
     private fun playDead() {
         removeFromParent()
+
+/*        GlobalScope.launch {
+            delay(3.seconds)
+            sceneContainer.changeTo<GameScene>(GameDependency("Game"))
+        }*/
     }
 
     private fun shoot() {
@@ -110,4 +118,5 @@ class Player(bm: Bitmap, private var views: Views, private var reloadTime: TimeS
         health -= amnt
         velocity.mulLocal(0.25f)
     }
+
 }

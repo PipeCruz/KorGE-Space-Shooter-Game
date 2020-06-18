@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.korau:korau-linuxx64:klib:cinterop-stb_vorbis:1.11.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korau/korau-linuxx64/1.11.9/e12b59b2acbad5cc8c67f40fa326993ead9969a6/korau-cinterop-stb_vorbis.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korau/korau-linuxx64/1.11.9/9b5ebe72759d4ba98a01d664869da661916748ac/korau-linuxx64-1.11.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

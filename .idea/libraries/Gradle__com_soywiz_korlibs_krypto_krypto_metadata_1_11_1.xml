@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.krypto:krypto-metadata:1.11.1" type="kotlin.common">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.krypto/krypto-metadata/1.11.1/de95107999ce00a93c17b04019ffcdc1e095fe7f/krypto-metadata-1.11.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.krypto/krypto-metadata/1.11.1/20e71a56ccb4f249a50ba6875bd0b2e62efd0dd7/krypto-metadata-1.11.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

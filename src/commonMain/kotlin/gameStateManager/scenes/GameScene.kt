@@ -2,6 +2,7 @@ package gameStateManager.scenes
 
 import com.soywiz.klock.milliseconds
 import com.soywiz.klock.seconds
+import com.soywiz.korev.Key
 import com.soywiz.korge.input.onClick
 import com.soywiz.korge.scene.Scene
 import com.soywiz.korge.time.delay
@@ -11,12 +12,14 @@ import com.soywiz.korim.color.RGBA
 import com.soywiz.korim.font.readBitmapFont
 import com.soywiz.korim.format.decodeImageFile
 import com.soywiz.korim.format.readBitmap
+import com.soywiz.korio.async.delay
 import com.soywiz.korio.async.launchImmediately
 import com.soywiz.korio.file.std.resourcesVfs
 import com.soywiz.korma.geom.*
 import entities.Player
 import entities.SpawningManager
 import gameStateManager.GameDependency
+import kotlinx.coroutines.GlobalScope
 import org.jbox2d.common.Vec2
 import kotlin.math.round
 import kotlin.random.Random
@@ -34,9 +37,11 @@ class GameScene(private val myDependency: GameDependency) : Scene() {
 
         fun playerDead()
         {
-            launchImmediately {
+            GlobalScope.launchImmediately {
+                delay(3.seconds)
+                println("Switching to game")
                 sceneDestroy()
-                sceneContainer.changeTo<HelpScene>(GameDependency("Manual"))
+                sceneContainer.changeTo<GameScene>(GameDependency("Game"))
             }
         }
 
@@ -100,8 +105,12 @@ class GameScene(private val myDependency: GameDependency) : Scene() {
                 playerHealth.text = """ ${player.health}"""
             } else {
                 playerHealth.xy(pointCounter.x - target.x+1000, pointCounter.y - target.y)
-                playerHealth.text = "Game over"
+                playerHealth.text = "Game Over"
                 playerDead()
+            }
+
+            if (views.input.keys[Key.ESCAPE]) {
+                switchScene()
             }
         }
 
@@ -131,12 +140,13 @@ class GameScene(private val myDependency: GameDependency) : Scene() {
                 //SpawningManager.spawnAsteroid(spawnPos.x, spawnPos.y, views, player, this, 3)
                 delay(Random.nextInt(1, 3).seconds)
             }
-
-
         }
-
-
     }
 
-
+    fun switchScene() {
+        GlobalScope.launchImmediately {
+            sceneDestroy()
+            sceneContainer.changeTo<MainMenuScene>(GameDependency("MainMenu"))
+        }
+    }
 }

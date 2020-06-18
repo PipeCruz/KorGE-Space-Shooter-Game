@@ -1,6 +1,7 @@
 package gameStateManager.scenes
 
 import com.soywiz.klock.milliseconds
+import com.soywiz.korev.Key
 import com.soywiz.korge.input.onClick
 import com.soywiz.korge.scene.Scene
 import com.soywiz.korge.view.*
@@ -14,6 +15,7 @@ import com.soywiz.korma.geom.degrees
 import com.soywiz.korma.geom.plus
 import com.soywiz.korma.geom.sin
 import gameStateManager.GameDependency
+import kotlinx.coroutines.GlobalScope
 import kotlin.random.Random
 
 class HelpScene (private val myDependency: GameDependency) : Scene()
@@ -25,7 +27,14 @@ class HelpScene (private val myDependency: GameDependency) : Scene()
         addUpdater {
             onClick {
                 sceneDestroy()
-                sceneContainer.changeTo<MainMenuScene>(GameDependency("Manual"))
+                sceneContainer.changeTo<MainMenuScene>(GameDependency("MainMenu"))
+            }
+
+            if (views.input.keys[Key.ESCAPE]) {
+                GlobalScope.launchImmediately {
+                    sceneDestroy()
+                    sceneContainer.changeTo<MainMenuScene>(GameDependency("MainMenu"))
+                }
             }
         }
         val font1 = resourcesVfs["font/font1.fnt"].readBitmapFont()
@@ -37,7 +46,7 @@ class HelpScene (private val myDependency: GameDependency) : Scene()
                 "Destroy enemies and collect experience points!\n" +
                 "After you have 500 points, press V to get a boost!\n" +
                 "press anywhere to return to the Main Menu\n\n" +
-                "Find us on github @michaelocity, @benozzy, @PipeCruz", font = font1, textSize = 50.0)
+                "Find us on github @michaelocity, @bdebiase, @PipeCruz", font = font1, textSize = 50.0)
 
 
         var background = resourcesVfs["animations/background/space2_4-frames.png"].readBitmap()

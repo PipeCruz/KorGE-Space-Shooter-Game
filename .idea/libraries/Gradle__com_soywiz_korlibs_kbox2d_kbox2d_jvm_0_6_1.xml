@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.kbox2d:kbox2d-jvm:0.6.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.kbox2d/kbox2d-jvm/0.6.1/e6f9baa5ce8eb57967bfc17691b5bbf28bbd5cd0/kbox2d-jvm-0.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.kbox2d/kbox2d-jvm/0.6.1/160a3e897758a9cbbf5fee7e9eae1410267b72e/kbox2d-jvm-0.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

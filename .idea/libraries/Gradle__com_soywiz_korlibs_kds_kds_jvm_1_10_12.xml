@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.kds:kds-jvm:1.10.12">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.kds/kds-jvm/1.10.12/a509028b83e71f7b511d07c481c0a19b28539522/kds-jvm-1.10.12.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.kds/kds-jvm/1.10.12/967a85b1942524bde5b713b790d3239961de6571/kds-jvm-1.10.12-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

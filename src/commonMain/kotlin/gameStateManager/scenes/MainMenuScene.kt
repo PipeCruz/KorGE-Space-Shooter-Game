@@ -28,17 +28,17 @@ class MainMenuScene(private val myDependency: GameDependency) : Scene() {
     @KorgeUntested
     override suspend fun Container.sceneInit() {
 
-        var blur = 10.0
-        filter = BlurFilter(blur)
+        //var blur = 10.0
+        //filter = BlurFilter(blur)
 
         addChild(DemoPlayer(resourcesVfs["character/pitrizzo-SpaceShip-gpl3-opengameart-96x96.png"].readBitmap()))
 
         launchImmediately {
-            while (blur>0) {
+/*            while (blur>0) {
                 filter = BlurFilter(blur)
                 blur -= 0.3
                 delay(10.milliseconds)
-            }
+            }*/
         }
         var offset = 0.degrees
 
@@ -72,7 +72,6 @@ class MainMenuScene(private val myDependency: GameDependency) : Scene() {
             }
         }
         manualButton?.scale = 2.0
-
 
         val exitButtonBitmap = resourcesVfs["buttons/BigExitButton.png"].readBitmap()
         val exitButton = sprite(exitButtonBitmap).position(containerRoot.width / 3 * 2 + 150, containerRoot.height / 2 + 300 + buttonOffset).center().onClick {

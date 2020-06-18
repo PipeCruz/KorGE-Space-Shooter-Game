@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.kbox2d:kbox2d-js:0.6.1" type="kotlin.js">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.kbox2d/kbox2d-js/0.6.1/828af9c2e3af8a0eb693003cde1a21ce805394f5/kbox2d-js-0.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.kbox2d/kbox2d-js/0.6.1/2d2de84262f960c65db84d0fcbf278e8aef0b68f/kbox2d-js-0.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

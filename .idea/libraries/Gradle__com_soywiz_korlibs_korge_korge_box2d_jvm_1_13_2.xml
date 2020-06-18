@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.korge:korge-box2d-jvm:1.13.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korge/korge-box2d-jvm/1.13.2/607dbcd6aeefb5ed7f62b476ab410ec4e28980c/korge-box2d-jvm-1.13.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korge/korge-box2d-jvm/1.13.2/4bdb9b479bf69c54dd0c984b88f6d132d7adc4d9/korge-box2d-jvm-1.13.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

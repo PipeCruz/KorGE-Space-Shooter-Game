@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.korau:korau-js:1.11.9" type="kotlin.js">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korau/korau-js/1.11.9/8eb9320b172f8bf4b59fb43ada2d9d7824f1ecb7/korau-js-1.11.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korau/korau-js/1.11.9/78d2ae3121f87f9a0b014bcffbf84b931d19cc72/korau-js-1.11.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

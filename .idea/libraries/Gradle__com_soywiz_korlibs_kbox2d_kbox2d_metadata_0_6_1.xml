@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.kbox2d:kbox2d-metadata:0.6.1" type="kotlin.common">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.kbox2d/kbox2d-metadata/0.6.1/9adfbe398f6c721d8711b94c19f236b35011bc8a/kbox2d-metadata-0.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.kbox2d/kbox2d-metadata/0.6.1/727ab5422cf2fc99c0d73a5005d47e72ef6eb7ec/kbox2d-metadata-0.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

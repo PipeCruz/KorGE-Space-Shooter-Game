@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.klogger:klogger-js:1.10.1" type="kotlin.js">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.klogger/klogger-js/1.10.1/60767ea09293c6e048289918ebf267351fe6d0d9/klogger-js-1.10.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.klogger/klogger-js/1.10.1/f5d4a6e20b3dcc4606ccc507f553fbee2c2fdf7b/klogger-js-1.10.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

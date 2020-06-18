@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.korgw:korgw-linuxx64:klib:cinterop-GL:1.12.18">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korgw/korgw-linuxx64/1.12.18/f4dbb004cef4365427dd0e9d6689609da1d18013/korgw-cinterop-GL.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.korgw/korgw-linuxx64/1.12.18/8e292f0cba4fbc32be476bd247a4bdfa1c40eca/korgw-linuxx64-1.12.18-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

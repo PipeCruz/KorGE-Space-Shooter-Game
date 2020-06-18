@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.soywiz.korlibs.kmem:kmem-linuxx64:klib:1.10.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.kmem/kmem-linuxx64/1.10.5/aaabaf996d5e45cae1df02554eeff80cb0ac309/kmem.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.soywiz.korlibs.kmem/kmem-linuxx64/1.10.5/1ac58efebb949215ec24718dfd85d0d8a31fac66/kmem-linuxx64-1.10.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
