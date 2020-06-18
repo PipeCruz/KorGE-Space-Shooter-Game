@@ -6,7 +6,10 @@ import com.soywiz.korge.view.SpriteAnimation
 import com.soywiz.korge.view.Views
 import com.soywiz.korge.view.xy
 import com.soywiz.korio.file.std.resourcesVfs
-import com.soywiz.korma.geom.*
+import com.soywiz.korma.geom.plus
+import com.soywiz.korma.geom.radians
+import com.soywiz.korma.geom.shortDistanceTo
+import com.soywiz.korma.geom.times
 import entities.Player
 import entities.SpawningManager
 import kotlinx.coroutines.GlobalScope
@@ -16,13 +19,13 @@ import org.jbox2d.common.Vec2
 import kotlin.math.atan2
 import kotlin.random.Random
 
-class RangedEnemy (bm: SpriteAnimation, views: Views, player: Player, health: Int) : Enemy(bm, views, player, moveSpeed = 1f,health = 8) {
+class RangedEnemy(bm: SpriteAnimation, views: Views, player: Player) : Enemy(bm, views, player, moveSpeed = 1f, health = 8) {
 
-    var explodeSound : NativeSound? = null
+    private var explodeSound: NativeSound? = null
 
     init {
         GlobalScope.launch {
-            explodeSound = resourcesVfs["sound/RetroSounds/Explosions/Short/sfx_exp_short_hard6.wav"].readSound()
+            explodeSound = resourcesVfs["sound/asteroid(sfx_exp_short_hard6).wav"].readSound()
             explodeSound?.volume = 0.25
         }
     }
@@ -67,8 +70,8 @@ class RangedEnemy (bm: SpriteAnimation, views: Views, player: Player, health: In
 
 
     var shootTimer = 0.0
-    fun trackPlayer(playerPosition: Vec2) : Unit {
-        velocity = Tracking.arrival(Vec2(x.toFloat(), y.toFloat()), playerPosition,moveSpeed*2).mul(moveSpeed)
+    fun trackPlayer(playerPosition: Vec2) {
+        velocity = Tracking.arrival(Vec2(x.toFloat(), y.toFloat()), playerPosition, moveSpeed * 2).mul(moveSpeed)
     }
     
     fun shootMissiles()

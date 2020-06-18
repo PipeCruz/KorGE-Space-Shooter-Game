@@ -4,16 +4,9 @@ import com.soywiz.klock.milliseconds
 import com.soywiz.korge.input.onClick
 import com.soywiz.korge.internal.KorgeUntested
 import com.soywiz.korge.scene.Scene
-import com.soywiz.korge.ui.iconButton
-import com.soywiz.korge.ui.uiButton
 import com.soywiz.korge.view.*
-import com.soywiz.korge.view.filter.BlurFilter
-import com.soywiz.korgw.GameWindow
-import com.soywiz.korim.color.Colors
-import com.soywiz.korim.font.CreateStringTextRenderer
 import com.soywiz.korim.font.readBitmapFont
 import com.soywiz.korim.format.readBitmap
-import com.soywiz.korio.async.delay
 import com.soywiz.korio.async.launchImmediately
 import com.soywiz.korio.file.std.resourcesVfs
 import com.soywiz.korma.geom.degrees
@@ -34,7 +27,8 @@ class MainMenuScene(private val myDependency: GameDependency) : Scene() {
         addChild(DemoPlayer(resourcesVfs["character/pitrizzo-SpaceShip-gpl3-opengameart-96x96.png"].readBitmap()))
 
         launchImmediately {
-/*            while (blur>0) {
+            /*     unused blurring effect
+            while (blur>0) {
                 filter = BlurFilter(blur)
                 blur -= 0.3
                 delay(10.milliseconds)
@@ -55,7 +49,7 @@ class MainMenuScene(private val myDependency: GameDependency) : Scene() {
         val startButtonBitmap = resourcesVfs["buttons/BigStartButton.png"].readBitmap()
         val startButton = sprite(startButtonBitmap).position(containerRoot.width / 3 * 2 + 150, containerRoot.height / 2 + buttonOffset).center().onClick {
             launchImmediately {
-                println("Switching to game")
+//                println("Switching to game")
                 sceneDestroy()
                 sceneContainer.changeTo<GameScene>(GameDependency("Game"))
 
@@ -66,7 +60,7 @@ class MainMenuScene(private val myDependency: GameDependency) : Scene() {
         val manualButtonBitmap = resourcesVfs["buttons/BigManualButton.png"].readBitmap()
         val manualButton = sprite(manualButtonBitmap).position(containerRoot.width / 3 * 2 + 150, containerRoot.height / 2 + 150 + buttonOffset).center().onClick {
             launchImmediately {
-                println("Switching to manual")
+//                println("Switching to manual")
                 sceneDestroy()
                 sceneContainer.changeTo<HelpScene>(GameDependency("Manual"))
             }

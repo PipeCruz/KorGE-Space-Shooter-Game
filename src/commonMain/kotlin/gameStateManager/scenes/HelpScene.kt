@@ -3,23 +3,19 @@ package gameStateManager.scenes
 import com.soywiz.klock.milliseconds
 import com.soywiz.korev.Key
 import com.soywiz.korge.input.onClick
+import com.soywiz.korge.internal.KorgeUntested
 import com.soywiz.korge.scene.Scene
 import com.soywiz.korge.view.*
-import com.soywiz.korge.view.filter.BlurFilter
 import com.soywiz.korim.font.readBitmapFont
 import com.soywiz.korim.format.readBitmap
-import com.soywiz.korio.async.delay
 import com.soywiz.korio.async.launchImmediately
 import com.soywiz.korio.file.std.resourcesVfs
-import com.soywiz.korma.geom.degrees
-import com.soywiz.korma.geom.plus
-import com.soywiz.korma.geom.sin
 import gameStateManager.GameDependency
 import kotlinx.coroutines.GlobalScope
 import kotlin.random.Random
 
-class HelpScene (private val myDependency: GameDependency) : Scene()
-{
+class HelpScene : Scene() {
+    @KorgeUntested
     override suspend fun Container.sceneInit() {
         launchImmediately {
 
@@ -38,7 +34,7 @@ class HelpScene (private val myDependency: GameDependency) : Scene()
             }
         }
         val font1 = resourcesVfs["font/font1.fnt"].readBitmapFont()
-        val help = text("Welcome to\n" +
+        text("Welcome to\n" +
                 "Star Battlers: Requiem, Commander!\n" +
                 "Here's some tips to get you started on your journey:\n\n" +
                 "To move, use WASD controls\n" +
@@ -49,7 +45,7 @@ class HelpScene (private val myDependency: GameDependency) : Scene()
                 "Find us on github @michaelocity, @bdebiase, @PipeCruz", font = font1, textSize = 50.0)
 
 
-        var background = resourcesVfs["animations/background/space2_4-frames.png"].readBitmap()
+        val background = resourcesVfs["animations/background/space2_4-frames.png"].readBitmap()
         for (xOffset in 0..17)
         {
             for (yOffset in 0..9) {

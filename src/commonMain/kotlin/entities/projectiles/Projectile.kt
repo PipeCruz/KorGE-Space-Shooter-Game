@@ -1,26 +1,21 @@
 package entities.projectiles
 
-import com.soywiz.klock.seconds
-import com.soywiz.korge.view.*
-import com.soywiz.korim.bitmap.Bitmap
-import com.soywiz.korio.async.delay
-import com.soywiz.korio.async.launchImmediately
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import org.jbox2d.common.Vec2
+import com.soywiz.korge.view.Sprite
+import com.soywiz.korge.view.SpriteAnimation
+import com.soywiz.korge.view.addUpdater
+import com.soywiz.korge.view.center
 
-abstract class Projectile(private var bm: SpriteAnimation, val bulletspeed: Float = 5.0f) : Sprite(bm){
-    abstract fun check():          Unit
-    abstract suspend fun shootNew(deltaTime: Double):       Unit
-    abstract fun updateVelocity(dt: Double): Unit
+abstract class Projectile(bm: SpriteAnimation, val bulletSpeed: Float = 5.0f) : Sprite(bm) {
+    abstract fun check()
+    abstract suspend fun shootNew(deltaTime: Double)
+    abstract fun updateVelocity(dt: Double)
 
-    protected var render = true
+    private var render = true
 
     init {
         scale = 0.5
         center()
-
-        addUpdater{ //adds updater to move
+        addUpdater {
             move(it.milliseconds)
         }
     }

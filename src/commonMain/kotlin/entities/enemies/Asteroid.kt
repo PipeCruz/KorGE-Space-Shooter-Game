@@ -2,9 +2,13 @@ package entities.enemies
 
 import com.soywiz.korau.sound.NativeSound
 import com.soywiz.korau.sound.readSound
-import com.soywiz.korge.view.*
+import com.soywiz.korge.view.SpriteAnimation
+import com.soywiz.korge.view.Views
+import com.soywiz.korge.view.xy
 import com.soywiz.korio.file.std.resourcesVfs
-import com.soywiz.korma.geom.*
+import com.soywiz.korma.geom.degrees
+import com.soywiz.korma.geom.plus
+import com.soywiz.korma.geom.times
 import entities.Player
 import entities.SpawningManager
 import kotlinx.coroutines.GlobalScope
@@ -13,14 +17,14 @@ import kotlin.random.Random
 
 class Asteroid(val bm: SpriteAnimation, views: Views, player: Player, private val asteroidSize: Int) : Enemy(bm, views, player, moveSpeed = 1f, health = asteroidSize, hitboxSize = asteroidSize * 25) {
 
-    var explodeSound : NativeSound? = null
+    private var explodeSound: NativeSound? = null
 
     init {
         velocity.x = Random.nextInt(-200, 200).toFloat()
         velocity.y = Random.nextInt(-200, 200).toFloat()
 
         GlobalScope.launch {
-            explodeSound = resourcesVfs["sound/RetroSounds/Explosions/Short/sfx_exp_short_hard6.wav"].readSound()
+            explodeSound = resourcesVfs["sound/asteroid(sfx_exp_short_hard6).wav"].readSound()
             explodeSound?.volume = 0.25
         }
     }
@@ -69,22 +73,11 @@ class Asteroid(val bm: SpriteAnimation, views: Views, player: Player, private va
                             SpawningManager.spawnXP(x + Random.nextInt(-30, 30), y + Random.nextInt(-30, 30), player, parent)
                     }
                 }
-
                 SpawningManager.spawnExplosion(x, y, angle, parent, asteroidSize.toDouble())
                 explodeSound?.play()
             }
-
             removeFromParent()
         }
     }
 
-    fun Split(currentScene : Container)
-    {
-        currentScene.removeChild(this)
-        currentScene.addChild(createSplitter())
-        currentScene.addChild(createSplitter())
-
-    }
-
-    private fun createSplitter(): Asteroid = Asteroid(bm, views, player, health - 1)
 }

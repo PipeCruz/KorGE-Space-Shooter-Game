@@ -15,7 +15,6 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import math.Tracking
 import org.jbox2d.common.Vec2
-import kotlin.math.abs
 import kotlin.math.atan2
 
 //USE THIS TO STORE THE ENEMY BITMAPS AND ASSOCIATED FILES SO THAT CALLING THEM WILL BE EASY
@@ -24,8 +23,6 @@ object SpawningManager {
 
      fun spawnTrackingEnemy(x :Double, y :Double, view: Views, player :Player, parent: Container?){
          GlobalScope.launch {
-//             val trackingEnemyBitmap = resourcesVfs["enemies/3 small ships.png"].readBitmap()
-//             val enemy = TrackingEnemy(SpriteAnimation(trackingEnemyBitmap, spriteWidth = 59, spriteHeight = 57), view, player)
              val testingSpriteAnimation = SpriteAnimation(
                      spriteMap = resourcesVfs["enemies\\tracker ship.png"].readBitmap(),
                      spriteWidth = 48,
@@ -33,7 +30,7 @@ object SpawningManager {
                      columns = 9,
                      rows = 1
              )
-             val enemy = TrackingEnemy(testingSpriteAnimation,view,player,5)
+             val enemy = TrackingEnemy(testingSpriteAnimation, view, player)
              enemy.xy(x, y)
              parent?.addChild(enemy)
              enemy.scale=3.0
@@ -47,27 +44,24 @@ object SpawningManager {
      fun spawnRangedEnemy(x :Double, y :Double, view: Views, player: Player, parent: Container?){
          GlobalScope.launch {
              val enemyBitmap = resourcesVfs["enemies/otherRanged.png"].readBitmap()
-             val enemy = RangedEnemy(SpriteAnimation(enemyBitmap, spriteWidth = 62, spriteHeight = 62), view, player,5)
+             val enemy = RangedEnemy(SpriteAnimation(enemyBitmap, spriteWidth = 62, spriteHeight = 62), view, player)
              enemy.xy(x, y)
              parent?.addChild(enemy)
              enemy.scale=3.0
-             var shootTimer = 0.0
-             enemy.addUpdater() {
+             enemy.addUpdater {
                  enemy.trackPlayer(Vec2(player.x.toFloat(), player.y.toFloat()))
              }
-//             GlobalScope.launch {
                  while (true) {
                      delay(2500)
                      enemy.shootMissiles()
                  }
-//             }
          }
      }
 
     fun spawnMissile(x :Double, y :Double, view: Views, player :Player, parent: Container?) {
         GlobalScope.launch {
             val enemyBitmap = resourcesVfs["animations/projectiles/rocket.png"].readBitmap()
-            val enemy = Missile(SpriteAnimation(enemyBitmap), view, player,2)
+            val enemy = Missile(SpriteAnimation(enemyBitmap), view, player)
             enemy.xy(x, y)
             parent?.addChild(enemy)
             enemy.scale=3.0
@@ -127,7 +121,7 @@ object SpawningManager {
 
      fun spawnXP(x: Double, y: Double, player:Player, parent: Container?)  {
          GlobalScope.launch {
-             val randedEnemyBitmap = resourcesVfs["exp.png"].readBitmap()
+             val randedEnemyBitmap = resourcesVfs["animations/projectiles/exp.png"].readBitmap()
              val exp = ExperiencePoint(randedEnemyBitmap, player)
              exp.xy(x, y)
              exp.explode()

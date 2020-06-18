@@ -12,7 +12,7 @@ abstract class Enemy(bm: SpriteAnimation, open var views: Views, var player: Pla
     init {
         scale = 2.0
         center()
-        addUpdater{ //adds updater to move
+        addUpdater {
             move(it.milliseconds)
         }
     }
@@ -23,7 +23,7 @@ abstract class Enemy(bm: SpriteAnimation, open var views: Views, var player: Pla
             check()
             updateVelocity()
             updatePosition(dt)
-            time-=10f/*100f*///I dunno about this right here being 100, when i print its between 12-14 so itll only run once, so i made it 10 - pipe
+            time -= 10f
         }
     }
 

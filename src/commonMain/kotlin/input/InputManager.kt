@@ -1,10 +1,6 @@
 package input
 
 import com.soywiz.korev.Key
-import com.soywiz.korev.KeyEvent
-import com.soywiz.korge.component.KeyComponent
-import com.soywiz.korge.input.InputKeys
-import com.soywiz.korge.view.View
 import com.soywiz.korge.view.Views
 
 open class InputManager(var views : Views) {
@@ -18,5 +14,4 @@ data class PlayerInput(val playerView: Views, var upKey : Key = Key.W, var downK
     fun pressingRight():  Boolean = pressingKey(rightKey)
     fun pressingAttack(): Boolean = pressingKey(attackKey)
     fun pressingBoost(): Boolean = pressingKey(boostKey)
-
 }

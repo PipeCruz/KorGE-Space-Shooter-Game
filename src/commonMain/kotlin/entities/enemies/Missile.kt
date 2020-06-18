@@ -15,22 +15,21 @@ import math.Tracking
 import org.jbox2d.common.Vec2
 import kotlin.math.atan2
 
-class Missile (bm: SpriteAnimation, views: Views, player: Player, health: Int) : Enemy(bm, views, player, moveSpeed = 3f,health = 1, hitboxSize = 25) {
+class Missile(bm: SpriteAnimation, views: Views, player: Player) : Enemy(bm, views, player, moveSpeed = 3f, health = 1, hitboxSize = 25) {
 
-    var explodeSound : NativeSound? = null
+    private var explodeSound: NativeSound? = null
 
     init {
         GlobalScope.launch {
-            explodeSound = resourcesVfs["sound/RetroSounds/Explosions/Short/sfx_exp_short_hard6.wav"].readSound()
+            explodeSound = resourcesVfs["sound/asteroid(sfx_exp_short_hard6).wav"].readSound()
             explodeSound?.volume = 0.25
         }
     }
 
-    override fun updateVelocity() {
-
+    override fun updateVelocity() {/*nothing*/
     }
 
-    var totalTime = 0.0
+    private var totalTime = 0.0
 
     override fun updatePosition(dt: Double) {
         totalTime+=dt
@@ -43,7 +42,7 @@ class Missile (bm: SpriteAnimation, views: Views, player: Player, health: Int) :
     }
 
     override fun check() {
-        if(pos.distanceTo(player.pos) < hitboxSize){ //set the image to be explosion if collided
+        if (pos.distanceTo(player.pos) < hitboxSize) {
             player.damage(5)
             health = 0
         }
@@ -60,23 +59,12 @@ class Missile (bm: SpriteAnimation, views: Views, player: Player, health: Int) :
             explodeSound?.play()
             removeFromParent()
         }
-//        if (this.collidesWith(player.bullets))//this code is redundant!
-//        {
-//            health--
-//            if(health<=0){
-//                SpawningManager.spawnExplosion(x, y, angle, parent, 1.0)
-//                removeFromParent()
-//                SpawningManager.spawnXP(x, y, player, parent)
-//            }
-//        }
     }
 
-    fun trackPlayer(playerPosition: Vec2) : Unit {
-        if(totalTime>1) {
-            velocity = Tracking.curvingTracking(Vec2(x.toFloat(), y.toFloat()), playerPosition, velocity, angle, 2.degrees).mul(moveSpeed)
-        }
-        else
-        {
+    fun trackPlayer(playerPosition: Vec2) {
+        if (totalTime > 1) {
+            velocity = Tracking.curvingTracking(Vec2(x.toFloat(), y.toFloat()), playerPosition, angle, 2.degrees).mul(moveSpeed)
+        } else {
             velocity = Tracking.trackingVector(Vec2(x.toFloat(), y.toFloat()), playerPosition).mul(moveSpeed)
         }
     }

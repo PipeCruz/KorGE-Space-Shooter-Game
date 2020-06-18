@@ -1,9 +1,10 @@
 package entities.projectiles
 
-import com.soywiz.korau.sound.NativeSound
 import com.soywiz.korau.sound.readSound
 import com.soywiz.korge.internal.KorgeInternal
-import com.soywiz.korge.view.*
+import com.soywiz.korge.view.SpriteAnimation
+import com.soywiz.korge.view.addTo
+import com.soywiz.korge.view.xy
 import com.soywiz.korio.file.std.resourcesVfs
 import com.soywiz.korma.geom.cos
 import com.soywiz.korma.geom.sin
@@ -20,25 +21,22 @@ class PlayerBullet(private val player: Player, bm : SpriteAnimation) : Projectil
         scale = 1.0
         rotation = player.angle
         player.parent?.let { addTo(it) }
-        //xy(player.x,player.y)
 
-
-        var shootSound = resourcesVfs["sound/RetroSounds/Weapons/Lasers/sfx_wpn_laser8.wav"].readSound()
+        val shootSound = resourcesVfs["sound/bullet(sfx_wpn_laser8).wav"].readSound()
         shootSound.volume = 0.25
         shootSound.play()
 
-//        velocity = Vec2(cos(rotation).toFloat(), sin(rotation).toFloat())
-        // velocity of bullet relative to player?
         velocity = Vec2(cos(rotation).toFloat(), sin(rotation).toFloat())
-        velocity.mulLocal(bulletspeed)
+        velocity.mulLocal(bulletSpeed)
+        //Relativity!
         velocity.x += player.velocity.x * deltaTime.toFloat()
         velocity.y += player.velocity.y * deltaTime.toFloat()
-//        println("original velocity  $velocity ")
+
         playAnimationLooped()
     }
 
      override fun updateVelocity(dt: Double) {
-         //println(velocity)
+
          xy(x +velocity.x ,y +velocity.y )
 
          val distanceToPlayer = Vec2((player.x - x).toFloat(), (player.y - y).toFloat())

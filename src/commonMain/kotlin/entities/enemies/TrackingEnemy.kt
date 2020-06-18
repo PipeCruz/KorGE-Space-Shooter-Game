@@ -2,7 +2,9 @@ package entities.enemies
 
 import com.soywiz.korau.sound.NativeSound
 import com.soywiz.korau.sound.readSound
-import com.soywiz.korge.view.*
+import com.soywiz.korge.view.SpriteAnimation
+import com.soywiz.korge.view.Views
+import com.soywiz.korge.view.xy
 import com.soywiz.korio.file.std.resourcesVfs
 import com.soywiz.korma.geom.*
 import entities.Player
@@ -14,13 +16,13 @@ import org.jbox2d.common.Vec2
 import kotlin.math.atan2
 import kotlin.random.Random
 
-class TrackingEnemy(bm: SpriteAnimation, views: Views, player: Player, health: Int) : Enemy(bm, views, player, moveSpeed = 2.5f, health = 8) {
+class TrackingEnemy(bm: SpriteAnimation, views: Views, player: Player) : Enemy(bm, views, player, moveSpeed = 2.5f, health = 8) {
 
-    var explodeSound : NativeSound? = null
+    private var explodeSound: NativeSound? = null
 
     init {
         GlobalScope.launch {
-            explodeSound = resourcesVfs["sound/RetroSounds/Explosions/Short/sfx_exp_short_hard6.wav"].readSound()
+            explodeSound = resourcesVfs["sound/asteroid(sfx_exp_short_hard6).wav"].readSound()
             explodeSound?.volume = 0.25
         }
     }
@@ -55,13 +57,13 @@ class TrackingEnemy(bm: SpriteAnimation, views: Views, player: Player, health: I
 
                 render = false
                 SpawningManager.spawnExplosion(x, y, angle, parent, 5.0)
-explodeSound?.play()
+                explodeSound?.play()
                 removeFromParent()
             }
         }
     }
 
-    fun trackPlayer(playerPosition: Vec2, deltaTime: Double): Unit {
+    fun trackPlayer(playerPosition: Vec2, deltaTime: Double) {
         velocity.addLocal(trackingVector(Vec2(x.toFloat(), y.toFloat()), playerPosition).mul(moveSpeed).mulLocal(deltaTime.toFloat()))
     }
 }

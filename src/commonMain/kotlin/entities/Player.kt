@@ -1,45 +1,34 @@
 package entities
 
-import com.soywiz.kds.atomic.kdsFreeze
 import com.soywiz.klock.TimeSpan
 import com.soywiz.klock.milliseconds
-import com.soywiz.klock.seconds
 import com.soywiz.kmem.toInt
 import com.soywiz.korau.sound.NativeSound
 import com.soywiz.korau.sound.readSound
-import com.soywiz.korge.scene.SceneContainer
 import com.soywiz.korge.time.delay
 import com.soywiz.korge.view.*
 import com.soywiz.korim.bitmap.Bitmap
-import com.soywiz.korim.color.RGBA
 import com.soywiz.korim.format.readBitmap
 import com.soywiz.korio.file.std.resourcesVfs
 import com.soywiz.korma.geom.*
-import entities.enemies.Enemy
 import entities.projectiles.PlayerBullet
-import gameStateManager.GameDependency
-import gameStateManager.scenes.GameScene
 import input.PlayerInput
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.jbox2d.common.Vec2
 import kotlin.math.atan2
-import kotlin.random.Random
 
-class Player(bm: Bitmap, private var views: Views, private var reloadTime: TimeSpan = 100.milliseconds) : Sprite(bm) {
+class Player(bm: Bitmap, views: Views, private var reloadTime: TimeSpan = 100.milliseconds) : Sprite(bm) {
 
     private val moveSpeed = 10f
     private val deceleration = 0.99f
 
     val velocity = Vec2()
     private val input = Vec2()
-    private val bounciness = -0.75f
-    private val gunRecoil = 10
-//    private var angle = 0.radians
     var angle = 0.radians
     var xp: Int = 0
     var health = 100
-    var damageSound : NativeSound? = null
+    private var damageSound: NativeSound? = null
 
     private val playerInput = PlayerInput(views)
 
@@ -50,7 +39,7 @@ class Player(bm: Bitmap, private var views: Views, private var reloadTime: TimeS
         shoot()
 
         GlobalScope.launch {
-            damageSound = resourcesVfs["sound/RetroSounds/Explosions/Short/sfx_exp_short_hard2.wav"].readSound()
+            damageSound = resourcesVfs["sound/playerDamage(sfx_exp_short_hard_2).wav"].readSound()
             damageSound?.volume = 0.25
         }
 
@@ -69,7 +58,7 @@ class Player(bm: Bitmap, private var views: Views, private var reloadTime: TimeS
                 velocity.y = input.y * moveSpeed * 100
                 rotation = atan2(velocity.y.toDouble(), velocity.x.toDouble()).radians + 90.degrees
                 xp-=5
-                println("Boost Used.\n$xp\nRemaining")
+//                println("Boost Used.\n$xp\nRemaining")
             }
 
             xy(x + velocity.x * deltaTime,y + velocity.y * deltaTime)
@@ -84,11 +73,6 @@ class Player(bm: Bitmap, private var views: Views, private var reloadTime: TimeS
 
     private fun playDead() {
         removeFromParent()
-
-/*        GlobalScope.launch {
-            delay(3.seconds)
-            sceneContainer.changeTo<GameScene>(GameDependency("Game"))
-        }*/
     }
 
     private fun shoot() {

@@ -1,16 +1,6 @@
-import com.soywiz.klock.DayOfWeek.Companion.get
 import com.soywiz.korge.Korge
 import com.soywiz.korge.scene.Module
-import com.soywiz.korgw.GameWindow
-import com.soywiz.korim.format.readBitmap
-import com.soywiz.korim.vector.Drawable
-import com.soywiz.korim.vector.FuncDrawable
-import com.soywiz.korim.vector.SizedDrawable
 import com.soywiz.korinject.AsyncInjector
-import com.soywiz.korio.file.std.resourcesVfs
-import com.soywiz.korma.geom.Anchor
-import com.soywiz.korma.geom.ScaleMode
-import com.soywiz.korma.geom.Size
 import com.soywiz.korma.geom.SizeInt
 import gameStateManager.GameDependency
 import gameStateManager.scenes.GameOverScene
@@ -33,13 +23,12 @@ object GameModule : Module() {
 //    override val fullscreen: Boolean = true
 
     override suspend fun AsyncInjector.configure() { // Allow different scenes to change between each other
-        mapInstance(GameDependency("Star Battle Infinitum "))  // call the first scene Main Menu
-        //DONT FORGET TO ADD THE SCENES TO THE MAP PROTOTYPE OR YOU WILL GET AN ERROR ABOUT THE SCENE MANAGER NOT BEING
-        //ABLE TO FIND IT
+        mapInstance(GameDependency("Space Battlers: Requiem"))  // call the first scene Main Menu
+        //DONT FORGET TO ADD THE SCENES TO THE MAP PROTOTYPE OR YOU WILL GET AN ERROR ABOUT THE SCENE MANAGER NOT BEING ABLE TO FIND IT
         mapPrototype { MainMenuScene(get()) }
-        mapPrototype { GameScene(get())}
-        mapPrototype { GameOverScene(get()) }
-        mapPrototype { HelpScene(get()) }
+        mapPrototype { GameScene(get()) }
+        mapPrototype { GameOverScene() }
+        mapPrototype { HelpScene() }
     }
 
 }
