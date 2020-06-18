@@ -1,2 +1,3 @@
 # KorGE Game Jam Submission
- runnable jar on https://pipecruz.itch.io/space-battlestars-r
+ runnable jar on the [itch.io](https://pipecruz.itch.io/space-battlers-requiem) page
+ 
