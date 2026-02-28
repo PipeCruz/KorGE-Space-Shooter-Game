@@ -1,7 +1,7 @@
 {
   "main": "kotlin/KotlinGameJam.js",
   "devDependencies": {
-    "webpack": "5.94.0",
+    "webpack": "5.104.1",
     "webpack-cli": "3.3.10",
     "webpack-dev-server": "3.9.0"
   },
